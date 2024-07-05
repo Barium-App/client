@@ -26,7 +26,7 @@ class SignalStrengthListener(private val context: Context) : PhoneStateListener(
 
         Log.d("SignalStrength", "Signal Strength: $dBm dBm")
 
-        if (dBm < -100) {
+        if (dBm < -110) {
             val location = (context as MainActivity).getLastKnownLocation()
             val cellInfo = getCellServingInfo()
             val message = "Signal strength: $dBm dBm\nLocation: $location\nCell Info: $cellInfo"

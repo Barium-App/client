@@ -1,71 +1,92 @@
 package com.example.barium
 
 import android.Manifest
+import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.ConnectivityManager
 import android.os.Build
 import android.os.Bundle
 import android.telephony.SmsManager
 import android.util.Log
+import android.view.View
 import android.widget.Button
+import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var passwordEditText: EditText
+    private lateinit var connectButton: Button
+    private lateinit var monitoringLayout: LinearLayout
     private lateinit var startButton: Button
     private lateinit var stopButton: Button
+    private lateinit var dataGrid: RecyclerView
     private lateinit var signalStrengthListener: SignalStrengthListener
     private lateinit var locationHelper: LocationHelper
-    private var isMonitoring = false
+
 
     companion object {
+        private const val SERVER_PHONE_NUMBER = "+989029518712" // Replace with actual server number
         private const val PERMISSION_REQUEST_CODE = 123
-        private const val SERVER_PHONE_NUMBER = "+989361720429" // Replace with actual server number
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        connectButton = findViewById(R.id.connectButton)
+        passwordEditText = findViewById(R.id.passwordEditText)
+
+        monitoringLayout = findViewById(R.id.monitoringLayout)
         startButton = findViewById(R.id.startButton)
         stopButton = findViewById(R.id.stopButton)
+        dataGrid = findViewById(R.id.dataGrid)
 
         signalStrengthListener = SignalStrengthListener(this)
         locationHelper = LocationHelper(this)
 
-        setupButtonListeners()
-        checkAndRequestPermissions()
-    }
 
-    private fun setupButtonListeners() {
-        startButton.setOnClickListener {
-            if (!isMonitoring) {
-                startMonitoring()
+        connectButton.setOnClickListener {
+            val password = passwordEditText.text.toString().trim()
+            if (password.isNotEmpty()) {
+                sendSMSToServer(password)
+                Toast.makeText(this, "Sending SMS with password...", Toast.LENGTH_SHORT).show()
+                monitoringLayout.visibility = View.VISIBLE
+                connectButton.visibility = View.GONE
+            } else {
+                Toast.makeText(this, "Please enter a password", Toast.LENGTH_SHORT).show()
             }
+        }
+
+
+
+        startButton.setOnClickListener {
+            startMonitoring()
         }
 
         stopButton.setOnClickListener {
-            if (isMonitoring) {
-                stopMonitoring()
-            }
+            stopMonitoring()
         }
+
+        checkAndRequestPermissions()
     }
 
     private fun startMonitoring() {
         signalStrengthListener.startListening()
         locationHelper.startListening()
-        isMonitoring = true
-        Toast.makeText(this, "Monitoring started", Toast.LENGTH_SHORT).show()
     }
 
     private fun stopMonitoring() {
         signalStrengthListener.stopListening()
         locationHelper.stopListening()
-        isMonitoring = false
-        Toast.makeText(this, "Monitoring stopped", Toast.LENGTH_SHORT).show()
     }
+
 
     private fun checkAndRequestPermissions() {
         val permissions = arrayOf(
@@ -97,7 +118,7 @@ class MainActivity : AppCompatActivity() {
     fun sendSMSToServer(message: String) {
         try {
             val smsManager = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                this.getSystemService(SmsManager::class.java)
+                getSystemService(SmsManager::class.java)
             } else {
                 SmsManager.getDefault()
             }
@@ -108,8 +129,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Failed to send SMS", Toast.LENGTH_SHORT).show()
         }
     }
-
     fun getLastKnownLocation(): String {
         return locationHelper.getLastKnownLocation()
     }
+
 }

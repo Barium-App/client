@@ -13,7 +13,7 @@ class LocationHelper(private val context: Context) : LocationListener {
     private val locationManager = context.getSystemService(Context.LOCATION_SERVICE) as LocationManager
 
     override fun onLocationChanged(location: Location) {
-        // You can handle location updates here if needed
+        Log.d("LocationHelper", "Location changed: ${location.latitude}, ${location.longitude}")
     }
 
     fun startListening() {
