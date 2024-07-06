@@ -1,0 +1,202 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.barium"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+11-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:5:5-69
+11-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:5:22-67
+12    <uses-permission android:name="android.permission.SEND_SMS" />
+12-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:6:5-66
+12-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:7:5-74
+13-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:7:22-72
+14    <uses-permission android:name="android.permission.READ_SMS" />
+14-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:8:5-66
+14-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:10:5-78
+15-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:10:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:11:5-80
+16-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:11:22-78
+17
+18    <uses-feature
+18-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:13:5-87
+19        android:name="android.hardware.telephony"
+19-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:13:19-60
+20        android:required="false" />
+20-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:13:61-85
+21    <uses-feature
+21-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:14:5-90
+22        android:name="android.hardware.location.gps"
+22-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:14:19-63
+23        android:required="false" />
+23-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:14:64-88
+24
+25    <permission
+25-->[androidx.core:core:1.13.0] C:\Users\Notebook\.gradle\caches\transforms-3\6d63cc9add407b74f2de184df48f4a96\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.example.barium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.13.0] C:\Users\Notebook\.gradle\caches\transforms-3\6d63cc9add407b74f2de184df48f4a96\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.13.0] C:\Users\Notebook\.gradle\caches\transforms-3\6d63cc9add407b74f2de184df48f4a96\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.example.barium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.13.0] C:\Users\Notebook\.gradle\caches\transforms-3\6d63cc9add407b74f2de184df48f4a96\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.13.0] C:\Users\Notebook\.gradle\caches\transforms-3\6d63cc9add407b74f2de184df48f4a96\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:16:5-48:19
+32        android:allowBackup="true"
+32-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:17:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.13.0] C:\Users\Notebook\.gradle\caches\transforms-3\6d63cc9add407b74f2de184df48f4a96\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+34        android:dataExtractionRules="@xml/data_extraction_rules"
+34-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:18:9-65
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:fullBackupContent="@xml/backup_rules"
+37-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:19:9-54
+38        android:icon="@mipmap/ic_launcher"
+38-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:20:9-43
+39        android:label="@string/app_name"
+39-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:21:9-41
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:22:9-54
+41        android:supportsRtl="true"
+41-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:23:9-35
+42        android:theme="@style/Theme.Barium" >
+42-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:24:9-44
+43
+44        <!-- main activity -->
+45        <activity
+45-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:27:9-35:20
+46            android:name="com.example.barium.MainActivity"
+46-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:28:13-41
+47            android:exported="true"
+47-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:29:13-36
+48            android:theme="@style/Theme.Barium" >
+48-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:30:13-48
+49            <intent-filter>
+49-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:31:13-34:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:32:17-69
+50-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:32:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:33:17-77
+52-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:33:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <service
+56-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:36:9-38:19
+57            android:name="com.example.barium.SMSService"
+57-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:36:18-44
+58            android:exported="false" >
+58-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:37:18-42
+59        </service>
+60
+61        <receiver
+61-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:39:9-45:20
+62            android:name="com.example.barium.SMSReceiver"
+62-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:39:19-46
+63            android:exported="true"
+63-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:40:19-42
+64            android:permission="android.permission.BROADCAST_SMS" >
+64-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:41:19-72
+65            <intent-filter>
+65-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:42:13-44:29
+66                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+66-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:43:17-81
+66-->C:\Users\Notebook\AndroidStudioProjects\Barium\app\src\main\AndroidManifest.xml:43:25-79
+67            </intent-filter>
+68        </receiver>
+69
+70        <activity
+70-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\Notebook\.gradle\caches\transforms-3\b16d8dc60709cd81a4e867c3d6b31861\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+71            android:name="androidx.compose.ui.tooling.PreviewActivity"
+71-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\Notebook\.gradle\caches\transforms-3\b16d8dc60709cd81a4e867c3d6b31861\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+72            android:exported="true" />
+72-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\Notebook\.gradle\caches\transforms-3\b16d8dc60709cd81a4e867c3d6b31861\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+73        <activity
+73-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\Notebook\.gradle\caches\transforms-3\b82005fc970a9a25e538adc8e53864ef\transformed\ui-test-manifest-1.5.0\AndroidManifest.xml:23:9-25:39
+74            android:name="androidx.activity.ComponentActivity"
+74-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\Notebook\.gradle\caches\transforms-3\b82005fc970a9a25e538adc8e53864ef\transformed\ui-test-manifest-1.5.0\AndroidManifest.xml:24:13-63
+75            android:exported="true" />
+75-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\Notebook\.gradle\caches\transforms-3\b82005fc970a9a25e538adc8e53864ef\transformed\ui-test-manifest-1.5.0\AndroidManifest.xml:25:13-36
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Notebook\.gradle\caches\transforms-3\b6859e0d14f40115c524946395744a30\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Notebook\.gradle\caches\transforms-3\b6859e0d14f40115c524946395744a30\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+79            android:authorities="com.example.barium.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Notebook\.gradle\caches\transforms-3\b6859e0d14f40115c524946395744a30\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Notebook\.gradle\caches\transforms-3\b6859e0d14f40115c524946395744a30\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Notebook\.gradle\caches\transforms-3\b6859e0d14f40115c524946395744a30\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Notebook\.gradle\caches\transforms-3\b6859e0d14f40115c524946395744a30\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Notebook\.gradle\caches\transforms-3\b6859e0d14f40115c524946395744a30\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Notebook\.gradle\caches\transforms-3\8fb5bb36dbccd8372d6bc1e52c5da180\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Notebook\.gradle\caches\transforms-3\8fb5bb36dbccd8372d6bc1e52c5da180\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Notebook\.gradle\caches\transforms-3\8fb5bb36dbccd8372d6bc1e52c5da180\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <receiver
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+93            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+94            android:directBootAware="false"
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+95            android:enabled="true"
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+96            android:exported="true"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+97            android:permission="android.permission.DUMP" >
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+99                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+102                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+105                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+108                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Notebook\.gradle\caches\transforms-3\7de14fe9d89461ee341ef0126f8a3e0d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+109            </intent-filter>
+110        </receiver>
+111    </application>
+112
+113</manifest>
